@@ -8,7 +8,7 @@ class App extends Component {
     return (
 
       <div className="App">
-      <Header logo={this.props.logo} title={this.props.title} slogan={this.props.slogan} user="" />
+      <Header logo={this.props.logo} title={this.props.title} slogan={this.props.slogan} user="Guest" />
       <Main reports={this.props.reports} />
       <Footer />
       </div>

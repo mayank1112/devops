@@ -6,16 +6,18 @@ class Main extends React.Component {
 constructor(props)
 {
 	console.log("in constructor")
-super();
+	super();
+
+	this.state={};
 }
 componentWillMount(){
 console.log("will mount")
-this.state={}
+
 //	history.push("/home/2");
  }
 
 componentDidMount(){
-	console.log("did mount!") 
+	console.log("did mount!");
  }
 
  componentWillReceiveProps(a, b) {

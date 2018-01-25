@@ -1,8 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import { createStore } from "redux";
+import rootReducer from "/Users/mayankmahajan/r/my-app/src/reducer"
 
 class Header extends React.Component { 
 
+componentDidMount() {
+
+   let store = createStore(rootReducer);
+       store.subscribe(() => console.log('REDUX SUBSCRIBE CALLBACK.....'))
+}
 
 	showLogin() {
 		
